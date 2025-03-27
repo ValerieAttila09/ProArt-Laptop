@@ -24,6 +24,86 @@ navbarButton.addEventListener("click", function() {
 })
 
 
+let isSettingOpen = false;
+const setting = document.getElementById("settings");
+const settingMenuButton = document.getElementById("settings-menu");
+
+function OpenSetting() {
+    setting.classList.remove("hidden");
+    document.querySelector("body").classList.add("no-scroll");
+    gsap.to(setting,
+        {
+            opacity: 1,
+            duration: 0.6,
+            ease: "power2.out",
+        });
+    isSettingOpen = true;
+}
+
+function CloseSetting() {
+    document.querySelector("body").classList.remove("no-scroll");
+    gsap.to(setting,
+        {
+            opacity: 0,
+            duration: 0.6,
+            ease: "power2.out",
+            onComplete: () => {
+                setting.classList.add("hidden");
+            }
+        });
+    isSettingOpen = false;
+}
+
+settingMenuButton.addEventListener("click", () => {
+    if (!isSettingOpen) {
+        OpenSetting();
+    } else {
+        CloseSetting();
+    }
+})
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const tabs = document.querySelectorAll(".tab-btn");
+    const tabContent = document.getElementById("tab-content");
+
+    function loadContent(file) {
+        gsap.to(tabContent, {
+            opacity: 0,
+            y: -10,
+            duration: 0.2,
+            onComplete: () => {
+                fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    tabContent.innerHTML = data;
+                    gsap.to(tabContent, {
+                        opacity: 1,
+                        y: 0,
+                        duration: 0.3
+                    });
+                })
+                .catch(error => {
+                    tabContent.innerHTML = "<p class='text-red-500'>Gagal memuat konten.</p>";
+                });
+            }});
+    }
+
+    // Event listener untuk setiap tab
+    tabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+            tabs.forEach(t => t.classList.remove("bg-neutral-800", "text-white"));
+            tab.classList.add("bg-neutral-800", "text-white");
+
+            const file = tab.getAttribute("tab-get");
+            loadContent(file);
+        });
+    });
+
+    // Load tab pertama saat halaman dimuat
+    loadContent("components/setting-content1.html");
+    tabs[0].classList.add("bg-neutral-800", "text-white");
+});
 
 
 document.addEventListener("DOMContentLoaded", () => {
