@@ -89,7 +89,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }});
     }
 
-    // Event listener untuk setiap tab
     tabs.forEach(tab => {
         tab.addEventListener("click", () => {
             tabs.forEach(t => t.classList.remove("bg-neutral-800", "text-white"));
@@ -100,7 +99,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Load tab pertama saat halaman dimuat
     loadContent("components/setting-content1.html");
     tabs[0].classList.add("bg-neutral-800", "text-white");
 });
