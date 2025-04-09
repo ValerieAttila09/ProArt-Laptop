@@ -6,7 +6,7 @@
     <title>ASUS ProArt Studiobook 16 OLED</title>
     <script src="plugins/gsap-member/minified/gsap.min.js"></script>
     <script src="plugins/gsap-member/minified/ScrollTrigger.min.js" type="text/javascript" charset="utf-8"></script>
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="style/index.css" type="text/css" media="all" />
 
@@ -23,7 +23,7 @@
 <body class="instrument-sans-regular">
 
     <div class="fixed z-8 top-0 right-0 left-0 w-full flex flex-col justify-start items-start">
-        <div class="relative z-[15] w-full h-[3.4rem] border border-t-0 border-l-0 border-r-0 border-neutral-600 bg-neutral-900/50 backdrop-blur-sm flex justify-between">
+        <div class="relative z-[15] w-full h-[3.4rem] border border-t-0 border-l-0 border-r-0 border-neutral-600 bg-neutral-900/15 backdrop-blur-sm flex justify-between">
             <div class="w-full px-3 py-2 flex justify-start items-center">
                 <div id="navbarButton" class="p-1">
                     <svg class="size-7 text-neutral-100" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -35,15 +35,9 @@
                 <svg class="size-10" fill="#F4F4F4" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><title>ASUS icon</title><path d="M23.904 10.788V9.522h-4.656c-.972 0-1.41.6-1.482 1.182v.018-1.2h-1.368v1.266h1.362zm-6.144.456l-1.368-.078v1.458c0 .456-.228.594-1.02.594H14.28c-.654 0-.93-.186-.93-.594v-1.596l-1.386-.102v1.812h-.03c-.078-.528-.276-1.14-1.596-1.23L6 11.22c0 .666.474 1.062 1.218 1.14l3.024.306c.24.018.414.09.414.288 0 .216-.18.24-.456.24H5.946V11.22l-1.386-.09v3.348h5.646c1.26 0 1.662-.654 1.722-1.2h.03c.156.864.912 1.2 2.19 1.2h1.41c1.494 0 2.202-.456 2.202-1.524zm4.398.258l-4.338-.258c0 .666.438 1.11 1.182 1.17l3.09.24c.24.018.384.078.384.276 0 .186-.168.258-.516.258h-4.212v1.29h4.302c1.356 0 1.95-.474 1.95-1.554 0-.972-.534-1.338-1.842-1.422zm-10.194-1.98h1.386v1.266h-1.386zM3.798 11.07l-1.506-.15L0 14.478h1.686zm7.914-1.548h-4.23c-.984 0-1.416.612-1.518 1.2v-1.2H3.618c-.33 0-.486.102-.642.33l-.648.936h9.384Z" /></svg>
             </div>
         </div>
-        <div id="menu" class="fixed z-10 top-[3.4rem] left-0 right-0 opacity-0 border border-neutral-600 border-r-0 border-l-0 border-t-0 z-10 w-full h-0 overflow-auto bg-zinc-900/60 backdrop-blur-sm">
+        <div id="menu" class="fixed z-10 top-[3.4rem] left-0 right-0 opacity-0 border border-neutral-600 border-r-0 border-l-0 border-t-0 z-10 w-full h-0 overflow-auto bg-zinc-900/15 backdrop-blur-sm">
             <div class="w-full h-full p-4">
                 <div class="flex flex-col justify-start items-start gap-2 px-1 py-2">
-                    <a href="#" class="group w-full px-2 py-2 rounded-lg hover:bg-zinc-950/30 hover:text-amber-400 hover:shadow-md hover:shadow-yellow-700/35 focus:shadow-lg focus:scale-[1.01] focus:shadow-yellow-700/15 focus:text-amber-400 active:bg-zinc-950/40 transition-all duration-[0.16s] flex justify-start items-center gap-3">
-                        <svg class="text-neutral-200 group-focus:text-amber-300 group-hover:text-amber-500 size-6 transition-all" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
-                        </svg>
-                        <span class="group-active:text-amber-300 group-hover:text-amber-500 transition-all text-white text-lg instrument-sans-semibold">Intro</span>
-                    </a>
                     <a href="#" class="group w-full px-2 py-2 rounded-lg hover:bg-zinc-950/30 hover:text-amber-400 hover:shadow-md hover:shadow-yellow-700/35 focus:shadow-lg focus:scale-[1.01] focus:shadow-yellow-700/15 focus:text-amber-400 active:bg-zinc-950/40 transition-all duration-[0.16s] flex justify-start items-center gap-3">
                         <svg class="size-6 group-focus:text-amber-300 group-hover:text-amber-500 text-neutral-200 transition-all" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
@@ -81,7 +75,7 @@
         <div id="gap2" class="w-full h-[100%] bg-neutral-900"></div>
     </div>
 
-    <div id="settings" class="hidden fixed overflow-auto opacity-0 w-full h-full bg-radial-[at_45%_94%] from-neutral-950 to-zinc-900 inset-0 top-0 right-0 left-0 bottom-0 z-20">
+    <div id="settings" class="hidden fixed opacity-0 w-full h-full bg-radial-[at_45%_94%] from-neutral-950 to-zinc-900 inset-0 top-0 right-0 left-0 bottom-0 z-20">
         <div class="w-full flex justify-start items-start px-5 py-6">
             <button onclick="CloseSetting()" id="settings-menu" class="rounded-lg bg-transparent p-1 border border-2 border-neutral-700 hover:bg-neutral-900/50 transition-all" type="button">
                 <svg class="size-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -101,16 +95,16 @@
                     <button tab-get="components/setting-content3.html" class="tab-btn w-full rounded-lg text-center lg:text-left p-2 text-sm lg:text-md text-white text-neutral-500 instrument-sans-medium hover:bg-neutral-900/80 transition-all" type="button">Help</button>
                 </div>
                 <div id="tab-content" class="lg:col-span-4 w-full h-full p-2">
-                    
+
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="w-full h-auto relative bg-black pt-[15rem]">
-        <img class="object-cover w-full h-auto" src="images/kv.jpg" alt="" />
-        <div class="w-full h-auto pb-[8rem] bg-gradient-to-t from-neutral-950 to-black">
-            <div class="w-full h-auto absolute top-[7.3rem] flex justify-end items-start gap-2 pe-3">
+    <div class="w-full h-auto relative bg-black pt-[15rem] lg:pt-[3rem]">
+        <img class="object-cover w-full h-auto lg:w-[65%] lg:mx-auto" src="images/kv.jpg" alt="" />
+        <div class="w-full h-auto md:px-[5rem] lg:px-[7rem] pb-[8rem] bg-gradient-to-t from-neutral-950 to-black">
+            <div class="w-full h-auto absolute top-[7.3rem] lg:right-[5rem] lg:top-[14rem] flex justify-end items-start gap-2 pe-3">
                 <div class="grid">
                     <div class="flex justify-end items-start gap-2">
                         <div class="py-3">
@@ -126,17 +120,17 @@
                 </div>
             </div>
             <div class="w-full px-5 py-2 flex flex-col justify-start items-center">
-                <h1 class="text-2xl instrument-sans-semibold bg-clip-text text-transparent bg-gradient-to-r from-amber-400 via-orange-200 to-yellow-300">ProArt Studiobook 16 OLED</h1>
-                <h2 class="text-lg instrument-sans-medium text-white">Born for Creative Pros</h2>
-                <p class="mt-4 text-center text-sm instrument-sans-thin text-white/90">
+                <h1 class="text-2xl lg:text-7xl instrument-sans-semibold bg-clip-text text-transparent bg-gradient-to-r from-amber-400 via-orange-200 to-yellow-300">ProArt Studiobook 16 OLED</h1>
+                <h2 class="text-lg lg:text-5xl instrument-sans-medium text-white">Born for Creative Pros</h2>
+                <p class="mt-4 text-center text-sm lg:text-xl instrument-sans-thin text-white/90">
                     ProArt Studiobook 16 OLED adalah laptop creator sebenarnya, dengan layar OLED 4K 16:10, Processor Intel Core 13<sup>th</sup> Gen dan GPU RTX 4070. Anda dapat menuangkan semua ide Anda jadi nyata dengan lebih baik.
                 </p>
             </div>
-            <div class="w-full grid grid-cols-2 px-4 pt-[3rem] gap-5">
+            <div class="w-full grid grid-cols-2 px-4 lg:px-10 pt-[3rem] gap-5">
                 <div class="group hover:shadow-xl hover:shadow-yellow-600/30 hover:-translate-y-1 transition-all bg-gradient-to-tr rounded-md from-fuchsia-400 via-violet-500 to-blue-600 p-[1.2px]">
-                    <div class="group-hover:bg-neutral-950/80 transition-all w-full p-3 rounded-md bg-neutral-900 flex flex-col justify-start items-center gap-2">
+                    <div class="group-hover:bg-neutral-950/80 transition-all w-full px-3 py-3 lg:py-8 rounded-md bg-neutral-900 flex flex-col justify-start items-center gap-2">
                         <div class="rounded-md bg-gradient-to-r p-1 from-yellow-400 to-amber-500">
-                            <svg class="size-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="size-12 lg:size-15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M17 14C17 15.4142 17 16.1213 16.5607 16.5607C16.1213 17 15.4142 17 14 17H10C8.58579 17 7.87868 17 7.43934 16.5607C7 16.1213 7 15.4142 7 14V10C7 8.58579 7 7.87868 7.43934 7.43934C7.87868 7 8.58579 7 10 7H14C15.4142 7 16.1213 7 16.5607 7.43934C17 7.87868 17 8.58579 17 10" stroke="#FFF" stroke-width="1.5" stroke-linecap="round" />
                                 <path d="M4 12C4 8.22876 4 6.34315 5.17157 5.17157C6.34315 4 8.22876 4 12 4C15.7712 4 17.6569 4 18.8284 5.17157C20 6.34315 20 8.22876 20 12C20 15.7712 20 17.6569 18.8284 18.8284C17.6569 20 15.7712 20 12 20C8.22876 20 6.34315 20 5.17157 18.8284C4 17.6569 4 15.7712 4 12Z" stroke="#FFF" stroke-width="1.5" />
                                 <path d="M4 12H2" stroke="#FFF" stroke-width="1.5" stroke-linecap="round" />
@@ -153,13 +147,13 @@
                                 <path d="M15 2L15 4" stroke="#FFF" stroke-width="1.5" stroke-linecap="round" />
                             </svg>
                         </div>
-                        <span class="text-center text-white instrument-sans-regular text-sm">13<sup>th</sup> Gen Intel<sup>®</sup> Core<sup>TM</sup> H-series processors</span>
+                        <span class="text-center text-white instrument-sans-regular text-sm lg:text-lg">13<sup>th</sup> Gen Intel<sup>®</sup> Core<sup>TM</sup> H-series processors</span>
                     </div>
                 </div>
                 <div class="group hover:shadow-xl hover:shadow-yellow-600/30 hover:-translate-y-1 transition-all bg-gradient-to-br from-fuchsia-400 via-blue-500 to-pink-200 p-[1.2px] rounded-md">
-                    <div class="h-full group-hover:bg-neutral-950/80 transition-all w-full p-3 bg-neutral-900 rounded-md flex flex-col justify-start items-center gap-2">
+                    <div class="h-full group-hover:bg-neutral-950/80 transition-all w-full px-3 py-3 lg:py-8 bg-neutral-900 rounded-md flex flex-col justify-start items-center gap-2">
                         <div class="rounded-md bg-gradient-to-r p-1 from-yellow-400 to-amber-500">
-                            <svg class="size-12" fill="#ffffff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            <svg class="size-12 lg:size-15" fill="#ffffff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 viewBox="0 0 512 512" xml:space="preserve">
                                 <g>
                                     <path d="M480.003,128H48c0-22.056-17.944-40-40-40c-4.418,0-8,3.582-8,8s3.582,8,8,8c13.234,0,24,10.766,24,24v288
@@ -199,43 +193,43 @@
                                 </g>
                             </svg>
                         </div>
-                        <span class="text-center text-white instrument-sans-regular text-sm">Discret High End Graphics</span>
+                        <span class="text-center text-white instrument-sans-regular text-sm lg:text-lg">Discret High End Graphics</span>
                     </div>
                 </div>
                 <div class="group hover:shadow-xl hover:shadow-yellow-600/30 hover:-translate-y-1 transition-all bg-gradient-to-tl rounded-md from-teal-400 via-cyan-500 to-violet-600 p-[1.2px]">
-                    <div class="group-hover:bg-neutral-950/80 transition-all w-full p-3 rounded-md bg-neutral-900 flex flex-col justify-start items-center gap-2">
+                    <div class="group-hover:bg-neutral-950/80 transition-all w-full h-full px-3 py-3 lg:py-8 rounded-md bg-neutral-900 flex flex-col justify-start items-center gap-2">
                         <div class="rounded-md bg-gradient-to-r p-1 from-yellow-400 to-amber-500">
-                            <svg class="size-12 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="size-12 lg:size-15 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M3 5.5L5 7.5L9.5 3M21 16V7.2C21 6.0799 21 5.51984 20.782 5.09202C20.5903 4.71569 20.2843 4.40973 19.908 4.21799C19.4802 4 18.9201 4 17.8 4H13.5M3 16V11.5M22 16V16.8C22 17.9201 22 18.4802 21.782 18.908C21.5903 19.2843 21.2843 19.5903 20.908 19.782C20.4802 20 19.9201 20 18.8 20H5.2C4.0799 20 3.51984 20 3.09202 19.782C2.71569 19.5903 2.40973 19.2843 2.21799 18.908C2 18.4802 2 17.9201 2 16.8V16H8.33726C8.58185 16 8.70414 16 8.81923 16.0276C8.92127 16.0521 9.01881 16.0925 9.10828 16.1474C9.2092 16.2092 9.29568 16.2957 9.46863 16.4686L9.53137 16.5314C9.70432 16.7043 9.7908 16.7908 9.89172 16.8526C9.98119 16.9075 10.0787 16.9479 10.1808 16.9724C10.2959 17 10.4182 17 10.6627 17H13.3373C13.5818 17 13.7041 17 13.8192 16.9724C13.9213 16.9479 14.0188 16.9075 14.1083 16.8526C14.2092 16.7908 14.2957 16.7043 14.4686 16.5314L14.5314 16.4686C14.7043 16.2957 14.7908 16.2092 14.8917 16.1474C14.9812 16.0925 15.0787 16.0521 15.1808 16.0276C15.2959 16 15.4182 16 15.6627 16H22Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </div>
-                        <span class="text-center text-white instrument-sans-regular text-sm">4K OLED HDR Touchscreen</span>
+                        <span class="text-center text-white instrument-sans-regular text-sm lg:text-lg">4K OLED HDR Touchscreen</span>
                     </div>
                 </div>
                 <div class="group hover:shadow-xl hover:shadow-yellow-600/30 hover:-translate-y-1 transition-all bg-gradient-to-br from-purple-400 via-cyan-600 to-violet-600 p-[1.2px] rounded-md">
-                    <div class="h-full group-hover:bg-neutral-950/80 transition-all w-full p-3 bg-neutral-900 rounded-md flex flex-col justify-start items-center gap-2">
+                    <div class="h-full group-hover:bg-neutral-950/80 transition-all w-full px-3 py-3 lg:py-8 bg-neutral-900 rounded-md flex flex-col justify-start items-center gap-2">
                         <div class="rounded-md bg-gradient-to-r p-1 from-yellow-400 to-amber-500">
-                            <svg fill="#ffffff" class="size-12" viewBox="0 0 36 36" version="1.1" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <svg fill="#ffffff" class="size-12 lg:size-15" viewBox="0 0 36 36" version="1.1" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <title>network-switch-line</title>
                                 <path d="M33.91,18.47,30.78,8.41A2,2,0,0,0,28.87,7H7.13A2,2,0,0,0,5.22,8.41L2.09,18.48a2,2,0,0,0-.09.59V27a2,2,0,0,0,2,2H32a2,2,0,0,0,2-2V19.06A2,2,0,0,0,33.91,18.47ZM32,27H4V19.06L7.13,9H28.87L32,19.06Z" class="clr-i-outline clr-i-outline-path-1"></path><rect x="7.12" y="22" width="1.8" height="3" class="clr-i-outline clr-i-outline-path-2"></rect><rect x="12.12" y="22" width="1.8" height="3" class="clr-i-outline clr-i-outline-path-3"></rect><rect x="17.11" y="22" width="1.8" height="3" class="clr-i-outline clr-i-outline-path-4"></rect><rect x="22.1" y="22" width="1.8" height="3" class="clr-i-outline clr-i-outline-path-5"></rect><rect x="27.1" y="22" width="1.8" height="3" class="clr-i-outline clr-i-outline-path-6"></rect><rect x="6.23" y="18" width="23.69" height="1.4" class="clr-i-outline clr-i-outline-path-7"></rect>
                                 <rect x="0" y="0" width="36" height="36" fill-opacity="0" />
                             </svg>
                         </div>
-                        <span class="text-center text-white instrument-sans-regular text-sm">Full Set of I/O Ports</span>
+                        <span class="text-center text-white instrument-sans-regular text-sm lg:text-lg">Full Set of I/O Ports</span>
                     </div>
                 </div>
                 <div class="group hover:shadow-xl hover:shadow-yellow-600/30 hover:-translate-y-1 transition-all bg-gradient-to-br rounded-md from-amber-400 via-violet-500 to-sky-600 p-[1.2px]">
-                    <div class="h-full group-hover:bg-neutral-950/80 transition-all w-full p-3 rounded-md bg-neutral-900 flex flex-col justify-start items-center gap-2">
+                    <div class="h-full group-hover:bg-neutral-950/80 transition-all w-full px-3 py-3 lg:py-8 rounded-md bg-neutral-900 flex flex-col justify-start items-center gap-2">
                         <div class="rounded-md bg-gradient-to-r p-1 from-yellow-400 to-amber-500">
-                            <svg class="size-12 text-white" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill="#ffffff" d="M118.656 438.656a32 32 0 0 1 0-45.248L416 96l4.48-3.776A32 32 0 0 1 461.248 96l3.712 4.48a32.064 32.064 0 0 1-3.712 40.832L218.56 384H928a32 32 0 1 1 0 64H141.248a32 32 0 0 1-22.592-9.344zM64 608a32 32 0 0 1 32-32h786.752a32 32 0 0 1 22.656 54.592L608 928l-4.48 3.776a32.064 32.064 0 0 1-40.832-49.024L805.632 640H96a32 32 0 0 1-32-32z" /></svg>
+                            <svg class="size-12 lg:size-15 text-white" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill="#ffffff" d="M118.656 438.656a32 32 0 0 1 0-45.248L416 96l4.48-3.776A32 32 0 0 1 461.248 96l3.712 4.48a32.064 32.064 0 0 1-3.712 40.832L218.56 384H928a32 32 0 1 1 0 64H141.248a32 32 0 0 1-22.592-9.344zM64 608a32 32 0 0 1 32-32h786.752a32 32 0 0 1 22.656 54.592L608 928l-4.48 3.776a32.064 32.064 0 0 1-40.832-49.024L805.632 640H96a32 32 0 0 1-32-32z" /></svg>
                         </div>
-                        <span class="text-center text-white instrument-sans-regular text-sm">ASUS Dial</span>
+                        <span class="text-center text-white instrument-sans-regular text-sm lg:text-lg">ASUS Dial</span>
                     </div>
                 </div>
                 <div class="group hover:shadow-xl hover:shadow-yellow-600/30 hover:-translate-y-1 transition-all bg-gradient-to-bl from-fuchsia-400 via-blue-500 to-purple-600 p-[1.2px] rounded-md">
-                    <div class="group-hover:bg-neutral-950/80 transition-all w-full p-3 bg-neutral-900 rounded-md flex flex-col justify-start items-center gap-2">
+                    <div class="group-hover:bg-neutral-950/80 transition-all w-full px-3 py-3 lg:py-8 bg-neutral-900 rounded-md flex flex-col justify-start items-center gap-2">
                         <div class="rounded-md bg-gradient-to-r p-1 from-yellow-400 to-amber-500">
-                            <svg class="size-12" fill="#ffffff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            <svg class="size-12 lg:size-15" fill="#ffffff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 viewBox="0 0 512 512" xml:space="preserve">
                                 <g>
                                     <g>
@@ -258,64 +252,67 @@
                                 </g>
                             </svg>
                         </div>
-                        <span class="text-center text-white instrument-sans-regular text-sm">Kualitas Military Grade</span>
+                        <span class="text-center text-white instrument-sans-regular text-sm lg:text-lg">Kualitas Military Grade</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="w-full h-auto pt-[6rem] pb-1 px-4">
-        <div class="p-2">
-            <h2 class="text-2xl instrument-sans-regular bg-clip-text text-transparent bg-gradient-to-r from-amber-400 via-violet-500 to-yellow-600">Performance</h2>
-            <h1 class="text-4xl instrument-sans-semibold text-neutral-900">Performance for Professionals</h1>
+    <div class="w-full lg:grid lg:grid-cols-5 px-3 py-4 lg:px-10 lg:py-[8rem]">
+        <div class="col-span-2 w-full h-auto pt-4 pb-1 px-4">
+            <div class="p-2">
+                <h2 class="text-2xl instrument-sans-regular bg-clip-text text-transparent bg-gradient-to-r from-amber-400 via-violet-500 to-yellow-600">Performance</h2>
+                <h1 class="text-4xl instrument-sans-semibold text-neutral-900">Performance for Professionals</h1>
+            </div>
+            <div class="p-2">
+                ProArt Studiobook Pro 16 OLED dirancang dengan satu tujuan memberi Anda semua performa terbaik yang Anda butuhkan untuk menangani proyek yang paling sulit dan paling membutuhkan banyak sumber daya. Dilengkapi dengan prosesor Intel Core i9 yang tangguh, grafis NVIDIA RTX4070 kelas profesional, salah satu SSD tercepat di dunia, dan memiliki konfigurasi memori yang fleksibel dengan RAM berkecepatan tinggi hingga 64 GB. Ini adalah laptop profesional terbaik, yang dibuat untuk para profesional terbaik.
+            </div>
         </div>
-        <div class="p-2">
-            ProArt Studiobook Pro 16 OLED dirancang dengan satu tujuan memberi Anda semua performa terbaik yang Anda butuhkan untuk menangani proyek yang paling sulit dan paling membutuhkan banyak sumber daya. Dilengkapi dengan prosesor Intel Core i9 yang tangguh, grafis NVIDIA RTX4070 kelas profesional, salah satu SSD tercepat di dunia, dan memiliki konfigurasi memori yang fleksibel dengan RAM berkecepatan tinggi hingga 64 GB. Ini adalah laptop profesional terbaik, yang dibuat untuk para profesional terbaik.
+
+        <div class="lg:col-span-3 w-full h-auto pt-4 pb-[6rem] px-4">
+            <div class="p-2">
+                <h1 class="text-2xl text-neutral-900 instrument-sans-semibold">Detail</h1>
+            </div>
+            <div class="p-2 w-full overflow-auto relative">
+                <table id="table" class="w-full">
+                    <tr class="border border-neutral-400">
+                        <th class="bg-neutral-200 p-3 text-start text-nowrap instrument-sans-semibold text-sm">Model Name</th>
+                        <td class="text-nowrap p-4 instrument-sans-regular text-left">H7600</td>
+                    </tr>
+                    <tr class="border border-neutral-400">
+                        <th class="bg-neutral-200 p-3 text-start text-nowrap instrument-sans-semibold text-sm">Sistem Operasi</th>
+                        <td class="text-nowrap p-4 instrument-sans-regular text-left">Windows 11 Pro dengan Office Home & Student 2021 Pre-installed</td>
+                    </tr>
+                    <tr class="border border-neutral-400">
+                        <th class="bg-neutral-200 p-3 text-start text-nowrap instrument-sans-semibold text-sm">Layar</th>
+                        <td class="text-nowrap p-4 instrument-sans-regular text-left">16" OLED 4K (3840x2400) 16:10 120Hz</td>
+                    </tr>
+                    <tr class="border border-neutral-400">
+                        <th class="bg-neutral-200 p-3 text-start text-nowrap instrument-sans-semibold text-sm">Processor</th>
+                        <td class="text-nowrap p-4 instrument-sans-regular text-left">Intel<sup>®</sup> Core<sup>TM</sup> i9-13980HX Processor</td>
+                    </tr>
+                    <tr class="border border-neutral-400">
+                        <th class="bg-neutral-200 p-3 text-start text-nowrap instrument-sans-semibold text-sm">GPU</th>
+                        <td class="text-nowrap p-4 instrument-sans-regular text-left">GeForce RTX<sup>TM</sup> 4070</td>
+                    </tr>
+                    <tr class="border border-neutral-400">
+                        <th class="bg-neutral-200 p-3 text-start text-nowrap instrument-sans-semibold text-sm">Storage</th>
+                        <td class="text-nowrap p-4 instrument-sans-regular text-left">8TB PCle<sup>®</sup> 4.0 x4 SSD</td>
+                    </tr>
+                    <tr class="border border-neutral-400">
+                        <th class="bg-neutral-200 p-3 text-start text-nowrap instrument-sans-semibold text-sm">Memori</th>
+                        <td class="text-nowrap p-4 instrument-sans-regular text-left">2x32GB 5200MHz DDR5</td>
+                    </tr>
+                    <tr class="border border-neutral-400">
+                        <th class="bg-neutral-200 p-3 text-start text-nowrap instrument-sans-semibold text-sm">Harga</th>
+                        <td class="text-nowrap p-4 instrument-sans-regular text-left">± Rp 41.199.000</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
 
-    <div class="w-full h-auto pt-[3rem] pb-[6rem] px-4">
-        <div class="p-2">
-            <h1 class="text-2xl text-neutral-900 instrument-sans-semibold">Detail</h1>
-        </div>
-        <div class="p-2 w-full overflow-auto relative">
-            <table id="table" class="w-full">
-                <tr class="border border-neutral-400">
-                    <th class="bg-neutral-200 p-3 text-start text-nowrap instrument-sans-semibold text-sm">Model Name</th>
-                    <td class="text-nowrap p-4 instrument-sans-regular text-left">H7600</td>
-                </tr>
-                <tr class="border border-neutral-400">
-                    <th class="bg-neutral-200 p-3 text-start text-nowrap instrument-sans-semibold text-sm">Sistem Operasi</th>
-                    <td class="text-nowrap p-4 instrument-sans-regular text-left">Windows 11 Pro dengan Office Home & Student 2021 Pre-installed</td>
-                </tr>
-                <tr class="border border-neutral-400">
-                    <th class="bg-neutral-200 p-3 text-start text-nowrap instrument-sans-semibold text-sm">Layar</th>
-                    <td class="text-nowrap p-4 instrument-sans-regular text-left">16" OLED 4K (3840x2400) 16:10 120Hz</td>
-                </tr>
-                <tr class="border border-neutral-400">
-                    <th class="bg-neutral-200 p-3 text-start text-nowrap instrument-sans-semibold text-sm">Processor</th>
-                    <td class="text-nowrap p-4 instrument-sans-regular text-left">Intel<sup>®</sup> Core<sup>TM</sup> i9-13980HX Processor</td>
-                </tr>
-                <tr class="border border-neutral-400">
-                    <th class="bg-neutral-200 p-3 text-start text-nowrap instrument-sans-semibold text-sm">GPU</th>
-                    <td class="text-nowrap p-4 instrument-sans-regular text-left">GeForce RTX<sup>TM</sup> 4070</td>
-                </tr>
-                <tr class="border border-neutral-400">
-                    <th class="bg-neutral-200 p-3 text-start text-nowrap instrument-sans-semibold text-sm">Storage</th>
-                    <td class="text-nowrap p-4 instrument-sans-regular text-left">8TB PCle<sup>®</sup> 4.0 x4 SSD</td>
-                </tr>
-                <tr class="border border-neutral-400">
-                    <th class="bg-neutral-200 p-3 text-start text-nowrap instrument-sans-semibold text-sm">Memori</th>
-                    <td class="text-nowrap p-4 instrument-sans-regular text-left">2x32GB 5200MHz DDR5</td>
-                </tr>
-                <tr class="border border-neutral-400">
-                    <th class="bg-neutral-200 p-3 text-start text-nowrap instrument-sans-semibold text-sm">Harga</th>
-                    <td class="text-nowrap p-4 instrument-sans-regular text-left">± Rp 41.199.000</td>
-                </tr>
-            </table>
-        </div>
-    </div>
 
     <div class="w-full h-auto pb-6">
         <div class="px-4 py-6 flex justify-center items-center">
@@ -361,10 +358,10 @@
     </div>
 
     <div id="animation-start" class="w-full h-auto">
-        <div id="review" class="w-full h-[160vh] pattern opacity-0 flex flex-col justify-end items-center relative bg-neutral-950">
-            <div class="pb-[12rem] w-full h-full bg-radial-[at_90%_15%] from-blue-400 via-violet-800/95 to-black/80 to-95% flex flex-col justify-end items-center">
+        <div id="review" class="w-full h-[160vh] lg:h-[260vh] pattern opacity-0 flex flex-col justify-end items-center relative bg-neutral-950">
+            <div class="pb-[8rem] w-full h-full bg-radial-[at_90%_15%] from-blue-400 via-violet-800/95 to-black/80 to-95% flex flex-col justify-end items-center">
                 <img id="dropImage" class="object-cover w-[420px]" src="images/review.png" alt="" />
-                <div class="w-full flex justify-center items-center px-[3rem] py-5">
+                <div class="w-full flex justify-center items-center px-[3rem] py-4">
                     <h1 id="titleReview" class="text-3xl instrument-sans-medium text-white grid">
                         <span class="text-center">More Better With</span>
                         <span class="instrument-sans-bold text-center text-4xl bg-clip-text text-transparent bg-gradient-to-l from-yellow-400 via-amber-600 to-violet-600">ProArt Studiobook 16 OLED</span>
@@ -375,7 +372,7 @@
     </div>
 
     <div class="w-full h-auto py-[8rem]">
-        <div class="grid grid-cols-4 gap-3 px-4">
+        <div class="grid grid-cols-4 gap-3 lg:gap-2 px-4 lg:px-[8rem] lg:py-8">
             <div class="col-span-4 rounded-lg bg-gradient-to-bl from-amber-700 via-yellow-300 to-orange-600 p-[2px]">
                 <div class="lg:flex lg:justify-around lg:items-center rounded-lg bg-gradient-to-br from-zinc-800 via-stone-900 to-neutral-800 flex flex-col justify-center items-center gap-3 px-[2.4rem] pt-[3rem] pb-[1rem]">
                     <div class="flex flex-col justify-center items-center gap-3">
@@ -647,48 +644,52 @@
         </div>
     </div>
 
-    <div class="w-full h-auto pt-10 pb-[22rem]">
-        <div class="w-full h-auto bg-radial-[at_0%_0%] from-violet-800 via-sky-800 to-neutral-900 py-4 px-2">
-            <div class="w-full flex justify-center items-center p-4">
-                <h1 class="text-4xl text-neutral-100 instrument-sans-bold">APA KATA MEDIA</h1>
-            </div>
-            <div class="w-full border border-2 border-neutral-700 rounded-lg bg-white flex flex-col justify-center gap-4 items-center p-2">
-                <div class="w-full flex flex-col justify-start gap-3 items-start p-5">
-                    <div class="w-full flex flex-col justify-start items-start gap-1">
-                        <img width="150" src="testimonial/Digital_Trends_logo.svg.png" alt="" />
-                    </div>
-                    <div class="w-full">
-                        <span class="text-md instrument-sans-regular text-neutral-700"><i>"ASUS ProArt Studiobook 16 OLED adalah salah satu laptop terbaik untuk kreator profesional. Layarnya yang luar biasa, ditambah dengan performa tinggi dan ASUS Dial yang inovatif, menjadikannya pilihan utama bagi desainer dan editor video."</i></span>
-                    </div>
+    <div class="w-full h-auto pt-10">
+        <div class="w-full h-auto bg-gradient-to-b from-white via-neutral-800 to-neutral-900 pt-10 lg:pt-[12rem] pb-[24rem] px-2 lg:px-5">
+            <div id="testimonialContent" class="w-full">
+                <div class="w-full flex justify-center items-center p-4">
+                    <h1 class="text-4xl text-transparent bg-clip-text bg-gradient-to-l from-yellow-400 via-yellow-500 to-amber-600 instrument-sans-bold">APA KATA MEDIA</h1>
                 </div>
-                <div class="w-full flex flex-col justify-start gap-3 items-start p-5">
-                    <div class="w-full flex flex-col justify-start items-start gap-1">
-                        <img width="150" src="testimonial/TechRadar_logo_(2023).svg.png" alt="" />
-                    </div>
-                    <div class="w-full">
-                        <span class="text-md instrument-sans-regular text-neutral-700"><i>"Dengan layar OLED 4K yang menakjubkan, performa tinggi berkat prosesor dan GPU terbaru, serta fitur khusus kreator seperti ASUS Dial, laptop ini benar-benar dirancang untuk profesional yang mengutamakan presisi dan efisiensi."</i></span>
-                    </div>
-                </div>
-                <div class="w-full flex flex-col justify-start gap-3 items-start p-5">
-                    <div class="w-full flex flex-col justify-start items-start gap-1">
-                        <img width="180" src="testimonial/Notebookcheck_Official_Logo.png" alt="" />
-                    </div>
-                    <div class="w-full">
-                        <span class="text-md instrument-sans-regular text-neutral-700"><i>"ASUS ProArt Studiobook 16 OLED menawarkan pengalaman visual yang luar biasa dan performa kelas atas. ASUS Dial adalah tambahan yang sangat berguna bagi pengguna aplikasi kreatif."</i></span>
+                <div class="bg-gradient-to-br from-blue-400 via-yellow-600 to-violet-500 p-[2px] rounded-lg shadow-xl shadow-neutral-950">
+                    <div class="lg:grid lg:grid-cols-2 w-full rounded-lg bg-white flex flex-col justify-center gap-4 items-center p-2 lg:p-5">
+                        <div class="w-full flex flex-col justify-start gap-3 items-start p-5">
+                            <div class="w-full flex flex-col justify-start items-start gap-1">
+                                <img width="150" src="testimonial/Digital_Trends_logo.svg.png" alt="" />
+                            </div>
+                            <div class="w-full">
+                                <span class="text-md instrument-sans-regular text-neutral-700"><i>"ASUS ProArt Studiobook 16 OLED adalah salah satu laptop terbaik untuk kreator profesional. Layarnya yang luar biasa, ditambah dengan performa tinggi dan ASUS Dial yang inovatif, menjadikannya pilihan utama bagi desainer dan editor video."</i></span>
+                            </div>
+                        </div>
+                        <div class="w-full flex flex-col justify-start gap-3 items-start p-5">
+                            <div class="w-full flex flex-col justify-start items-start gap-1">
+                                <img width="150" src="testimonial/TechRadar_logo_(2023).svg.png" alt="" />
+                            </div>
+                            <div class="w-full">
+                                <span class="text-md instrument-sans-regular text-neutral-700"><i>"Dengan layar OLED 4K yang menakjubkan, performa tinggi berkat prosesor dan GPU terbaru, serta fitur khusus kreator seperti ASUS Dial, laptop ini benar-benar dirancang untuk profesional yang mengutamakan presisi dan efisiensi."</i></span>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-2 w-full flex flex-col justify-start gap-3 items-start p-5">
+                            <div class="w-full flex flex-col justify-start items-start gap-1">
+                                <img width="180" src="testimonial/Notebookcheck_Official_Logo.png" alt="" />
+                            </div>
+                            <div class="w-full">
+                                <span class="text-md instrument-sans-regular text-neutral-700"><i>"ASUS ProArt Studiobook 16 OLED menawarkan pengalaman visual yang luar biasa dan performa kelas atas. ASUS Dial adalah tambahan yang sangat berguna bagi pengguna aplikasi kreatif."</i></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer class="w-full bg-neutral-900 text-white py-6">
+    <footer class="w-full bg-neutral-900 text-white pt-10 pb-8 lg:pt-[12rem]">
         <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
             <div class="text-center md:text-left">
                 <h2 class="text-lg font-semibold">ASUS ProArt Studiobook 16 OLED</h2>
                 <p class="text-sm text-neutral-400">
                     Laptop profesional untuk kreator terbaik.
                 </p>
-                <span class="instrument-sans-bold text-neutral-300 text-md">Made By Valerie.</span>
+                <span class="instrument-sans-bold text-neutral-300 text-md">Made By One Person.</span>
             </div>
             <div class="flex space-x-4 mt-4 md:mt-0">
                 <a href="#" class="text-neutral-400 hover:text-amber-400 transition">
@@ -709,7 +710,7 @@
                 </a>
             </div>
             <div class="mt-4 md:mt-0 text-center md:text-right text-sm text-neutral-400">
-                &copy; 2025 ASUS. All rights reserved.
+                &copy; 2025 Valerie Attila Al-fath. Kebijakan Privasi berlaku.
             </div>
         </div>
     </footer>
