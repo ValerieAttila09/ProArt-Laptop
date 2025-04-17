@@ -16,6 +16,10 @@
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 
 </head>
@@ -74,7 +78,7 @@
         <div id="gap2" class="w-full h-[100%] bg-neutral-900"></div>
     </div>
 
-    <div id="settings" class="hidden fixed opacity-0 w-full h-full bg-radial-[at_45%_94%] from-neutral-950 to-zinc-900 inset-0 top-0 right-0 left-0 bottom-0 z-20">
+    <div id="settings" class="hidden overflow-auto fixed opacity-0 w-full h-full bg-radial-[at_45%_94%] from-neutral-950 to-zinc-900 inset-0 top-0 right-0 left-0 bottom-0 z-20">
         <div class="w-full flex justify-start items-start px-5 py-6">
             <button onclick="CloseSetting()" id="settings-menu" class="rounded-lg bg-transparent p-1 border border-2 border-neutral-700 hover:bg-neutral-900/50 transition-all" type="button">
                 <svg class="size-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -692,7 +696,7 @@
                         <button type="submit" class="w-[7rem] bg-green-600 border border-green-400 text-white px-4 py-1 rounded instrument-sans-medium">Kirim</button>
                     </form>
 
-                    <div id="testimonial-list" class="border border-neutral-700 inset-shadow-sm inset-shadow-neutral-900 px-2 space-y-4 h-[438px] overflow-auto py-4 rounded-xl">
+                    <div id="testimonial-list" class="border border-neutral-700 inset-shadow-sm inset-shadow-neutral-900 px-2 space-y-4 max-h-[438px] overflow-auto py-4 rounded-xl">
                         
                     </div>
                 </div>
