@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
         scrollTrigger: {
             trigger: "#animation-start",
             start: "top 0px",
-            end: "+=1500",
+            end: "+=1300",
             scrub: true,
             //markers: true,
         }
@@ -176,3 +176,78 @@ function goToSlide(index) {
 
 document.getElementById("prev").addEventListener("click", () => goToSlide(currentIndex - 1));
 document.getElementById("next").addEventListener("click", () => goToSlide(currentIndex + 1));
+
+
+
+const supabaseClient = supabase.createClient('https://wpupfzumeufxqvmqtlvs.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndwdXBmenVtZXVmeHF2bXF0bHZzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDMxNzk0NjIsImV4cCI6MjA1ODc1NTQ2Mn0.6VzojGXQ0nxvHZNYKvgMKF0qZW39ryGKJQhHOB5hzb4');
+
+const form = document.getElementById('testimonial-form');
+const list = document.getElementById('testimonial-list');
+
+// Load existing testimonials
+async function loadTestimonials() {
+    const {
+        data,
+        error
+    } = await supabaseClient
+    .from('testimonials')
+    .select('*')
+    .order('created_at', {
+        ascending: false
+    });
+
+    if (data) {
+        list.innerHTML = '';
+        data.forEach(addTestimonialToDOM);
+    }
+}
+
+// Add testimonial to the DOM
+function addTestimonialToDOM( {
+    name, message, created_at
+}) {
+    const item = document.createElement('div');
+    item.className = "p-4 border border-neutral-700 rounded-lg shadow-lg shadow-neutral-900 bg-neutral-900/80 focus:scale-[1.04] transition-all";
+    item.innerHTML = `
+    <p class="instrument-sans-bold text-neutral-300">${name}</p>
+    <p class="instrument-sans-regular text-neutral-200">${message}</p>
+    <p class="text-xs text-neutral-500">${new Date(created_at).toLocaleString()}</p>
+    `;
+
+    // Awalnya disembunyikan untuk animasi
+    item.style.opacity = 0;
+    item.style.transform = "translateY(30px)";
+
+    list.prepend(item);
+
+    // GSAP animasi muncul
+    gsap.to(item, {
+        opacity: 1,
+        y: 0,
+        duration: 0.5,
+        ease: "power2.out"
+    });
+}
+
+// Submit form
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const message = document.getElementById('message').value;
+
+    await supabaseClient.from('testimonials').insert([{
+        name, message
+    }]);
+    form.reset();
+});
+
+// Realtime listener
+supabaseClient.channel('public:testimonials').on('postgres_changes', {
+    event: 'INSERT',
+    schema: 'public',
+    table: 'testimonials'
+}, (payload) => {
+    addTestimonialToDOM(payload.new);
+}).subscribe();
+
+loadTestimonials();
