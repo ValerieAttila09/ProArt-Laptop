@@ -184,7 +184,6 @@ const supabaseClient = supabase.createClient('https://wpupfzumeufxqvmqtlvs.supab
 const form = document.getElementById('testimonial-form');
 const list = document.getElementById('testimonial-list');
 
-// Load existing testimonials
 async function loadTestimonials() {
     const {
         data,
@@ -202,34 +201,42 @@ async function loadTestimonials() {
     }
 }
 
-// Add testimonial to the DOM
 function addTestimonialToDOM( {
     name, message, created_at
 }) {
     const item = document.createElement('div');
-    item.className = "p-4 border border-neutral-700 rounded-lg shadow-lg shadow-neutral-900 bg-neutral-900/80 focus:scale-[1.04] transition-all";
+    item.className = "relative p-4 border border-neutral-700 rounded-lg shadow-lg shadow-neutral-900 bg-neutral-900/80 focus:scale-[1.04] transition-all";
     item.innerHTML = `
-    <p class="instrument-sans-bold text-neutral-300">${name}</p>
-    <p class="instrument-sans-regular text-neutral-200">${message}</p>
-    <p class="text-xs text-neutral-500">${new Date(created_at).toLocaleString()}</p>
+    <div class="w-[2.1rem] h-[2.1rem] flex justify-center items-center absolute -top-2 -left-1 rounded-full bg-sky-500 overflow-hidden">
+        <svg class="size-4" fill="#ffffff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="796 698 200 200" enable-background="new 796 698 200 200" xml:space="preserve">
+            <g>
+                <path d="M885.208,749.739v-40.948C836.019,708.791,796,748.81,796,798v89.209h89.208V798h-48.26
+                    C836.948,771.39,858.598,749.739,885.208,749.739z" />
+                <path d="M996,749.739v-40.948c-49.19,0-89.209,40.019-89.209,89.209v89.209H996V798h-48.26
+                    C947.74,771.39,969.39,749.739,996,749.739z" />
+            </g>
+        </svg>
+    </div>
+    <div class="w-full grid px-4 gap-1">
+        <p class="instrument-sans-bold text-neutral-100">${name}</p>
+        <p class="instrument-sans-regular text-md text-neutral-400">${message}</p>
+        <p class="text-xs text-neutral-500">${new Date(created_at).toLocaleString()}</p>
+    </div>
     `;
 
-    // Awalnya disembunyikan untuk animasi
     item.style.opacity = 0;
     item.style.transform = "translateY(30px)";
 
     list.prepend(item);
 
-    // GSAP animasi muncul
     gsap.to(item, {
         opacity: 1,
         y: 0,
-        duration: 0.5,
+        duration: 0.6,
         ease: "power2.out"
     });
 }
 
-// Submit form
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const name = document.getElementById('name').value;
@@ -241,7 +248,6 @@ form.addEventListener('submit', async (e) => {
     form.reset();
 });
 
-// Realtime listener
 supabaseClient.channel('public:testimonials').on('postgres_changes', {
     event: 'INSERT',
     schema: 'public',
